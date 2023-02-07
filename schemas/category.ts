@@ -43,6 +43,6 @@ export default defineType({
       title: 'Treinador',
       type: 'reference',
       to: {type: 'author'},
-    }),
+    }), 
   ],
 })
