@@ -1,8 +1,8 @@
 import { defineField, defineType } from 'sanity'
 import positions from '../positions/positions'
 export default defineType({
-  name: 'jogadores',
-  title: 'Jogadores',
+  name: 'category',
+  title: 'Category',
   type: 'document',
   fields: [
     defineField({
@@ -42,7 +42,7 @@ export default defineType({
       name: 'treinador',
       title: 'Treinador',
       type: 'reference',
-      to: {type: 'treinador'},
+      to: {type: 'author'},
     }),
   ],
 })
